@@ -1,0 +1,41 @@
+body{
+  margin:0;
+  font-family:Arial,sans-serif;
+  background:#e8f5e9;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.game{
+  background:#fff;
+  padding:20px;
+  border-radius:10px;
+  text-align:center;
+  box-shadow:0 0 10px #999;
+}
+
+input{
+  padding:8px;
+  width:120px;
+  margin:10px;
+}
+
+button{
+  padding:8px 15px;
+  background:#4CAF50;
+  color:#fff;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+button:hover{
+  background:#388E3C;
+}
+
+#result{
+  margin-top:10px;
+  font-weight:bold;
+}
