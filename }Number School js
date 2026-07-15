@@ -1,0 +1,24 @@
+let a = Math.floor(Math.random() * 10) + 1;
+let b = Math.floor(Math.random() * 10) + 1;
+
+function newQuestion() {
+  document.getElementById("question").innerText = `${a} + ${b} = ?`;
+}
+
+function check() {
+  let ans = Number(document.getElementById("answer").value);
+  let result = document.getElementById("result");
+
+  if (ans === a + b) {
+    result.innerText = "✅ Correct!";
+  } else {
+    result.innerText = "❌ Wrong! Answer: " + (a + b);
+  }
+
+  a = Math.floor(Math.random() * 10) + 1;
+  b = Math.floor(Math.random() * 10) + 1;
+  document.getElementById("answer").value = "";
+  newQuestion();
+}
+
+newQuestion();
