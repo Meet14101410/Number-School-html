@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Number School</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="game">
+    <h1>🏫 Number School</h1>
+    <p id="question">2 + 3 = ?</p>
+    <input type="number" id="answer" placeholder="Your Answer">
+    <button onclick="check()">Submit</button>
+    <p id="result"></p>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
